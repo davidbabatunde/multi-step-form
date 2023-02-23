@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multi-Step Form</title>
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <div class="multistep-form">
+      <form id="step-1" class="form-step">
+        <h2>Step 1</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <button class="next-btn">Next</button>
+      </form>
+
+      <form id="step-2" class="form-step">
+        <h2>Step 2</h2>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required />
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required />
+        <button class="prev-btn">Previous</button>
+        <button class="next-btn">Next</button>
+      </form>
+
+      <form id="step-3" class="form-step">
+        <h2>Step 3</h2>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <label for="confirm-password">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          required
+        />
+        <button class="prev-btn">Previous</button>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="test.js"></script>
+  </body>
+</html>

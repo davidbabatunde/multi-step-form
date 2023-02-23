@@ -1,0 +1,28 @@
+// Get all the form steps
+const formSteps = document.querySelectorAll(".form-step");
+
+// Get the "Previous" and "Next" buttons
+const prevBtns = document.querySelectorAll(".prev-btn");
+const nextBtns = document.querySelectorAll(".next-btn");
+
+// Add click event listener to each "Next" button
+nextBtns.forEach((nextBtn, index) => {
+  nextBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    const currentStep = event.target.closest(".form-step");
+    const nextStep = formSteps[index + 1];
+    currentStep.style.display = "none";
+    nextStep.style.display = "block";
+  });
+});
+
+// Add click event listener to each "Previous" button
+prevBtns.forEach((prevBtn, index) => {
+  prevBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    const currentStep = event.target.closest(".form-step");
+    const prevStep = formSteps[index - 1];
+    currentStep.style.display = "none";
+    prevStep.style.display = "block";
+  });
+});

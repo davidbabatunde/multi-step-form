@@ -1,0 +1,53 @@
+.multistep-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.form-step {
+  display: none;
+  max-width: 400px;
+}
+
+.form-step h2 {
+  margin-bottom: 20px;
+}
+
+.form-step label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-step input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-step button {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.form-step button:hover {
+  cursor: pointer;
+}
+
+.form-step .prev-btn {
+  background-color: #aaa;
+}
+
+.form-step .next-btn {
+  float: right;
+}
+
+.form-step:first-child {
+  display: block;
+}
